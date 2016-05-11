@@ -13,11 +13,7 @@ module SessionsHelper
 
 	def current_user
 		if (user_id = session[:user_id])
-<<<<<<< HEAD
-			@current_user ||= User.find_by(id: params[user_id])
-=======
 			@current_user ||= User.find_by(id: user_id)
->>>>>>> log-in-log-out
 		elsif (user_id = cookies.signed[:user_id])
 			user = User.find_by(id: params[user_id])
 			if user && user.authenticated?(cookies[:remember_token])
