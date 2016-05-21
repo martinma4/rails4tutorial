@@ -34,7 +34,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     log_in_as(user)
     assert_not is_logged_in?
     # Invalid activation token
-    byebug
     get edit_account_activation_path("invalid token")
     assert_not is_logged_in?
     # Valid token, wrong email
