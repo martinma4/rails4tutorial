@@ -1,6 +1,6 @@
 hello:
   name: Hello World
-  email: hello@world.com
+  email: martin.maqianli@gmail.com
   password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
