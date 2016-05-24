@@ -26,3 +26,8 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: hello
 <% end %>
+
+ants:
+  content: "Oh, is that what you want? Because that's how you get ants!"
+  created_at: <%= 2.years.ago %>
+  user: qianli
